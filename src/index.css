@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* default background */
+.background-container
+{
+  background:#42f5ef;
+  width: max-content;
+  position: relative;
+  transition: width .4s linear 0s ;
+}
+.background{
+  height: 100vh;
+  width:100vw;
+  transition: width 2s linear 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* cats indicator */
+.cats-indicator{
+  position: absolute;
+  height: 100vh;
+  background-color: skyblue;
+  transition: width 2s linear 1s;
+}
+.animals-container {
+  display: flex;
+  background-color: white;
+  min-width: 400px;
+  min-height: 150px;
+  padding: 10px;
+  justify-content: space-evenly;
+  z-index: 10;
+}
+
+.cats {
+cursor: pointer;
+color: skyblue;
+text-transform: uppercase;
+font-weight: 500;
+font-size: 25px;
+}
+
+.dogs {
+ cursor: pointer;
+ color:#42f5ef;
+ text-transform: uppercase;
+ font-weight: 500;
+ font-size: 25px;
+}
+
+.vote-count
+{
+  position: absolute;
+  bottom: 30px;
+  right: 10px;
+  font-size: 35px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.6);
+}
